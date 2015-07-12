@@ -1,11 +1,11 @@
-print 'thtring, please!: '
+print 'Say something: '
 user_input = gets.chomp
 user_input.downcase!
 
-if user_input.include? 's'
-	user_input.gsub!(/s/, 'th')
+if user_input.include? "s"
+    user_input.gsub!(/s/, "th")
 else
-	puts 'nothing to do here'
+    puts 'nothin to do here'
 end
 
-puts 'Your string is: #{user_input}'
+print "You meant to say \"#{user_input}\" ?"
